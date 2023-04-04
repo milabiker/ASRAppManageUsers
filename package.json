@@ -1,0 +1,11 @@
+{
+  "name": "asr_app_manage_users",
+  "version": "1.0.0",
+  "description": "Server side part to manage users of ASR App using firebase admin sdk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "milabiker",
+  "license": "ISC"
+}
