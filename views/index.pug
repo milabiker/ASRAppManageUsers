@@ -1,0 +1,9 @@
+doctype html
+html
+  head
+    title Create Users from CSV File
+  body
+    h1 Create Users from CSV File
+    form(action="/create-users", method="POST", enctype="multipart/form-data")
+      input(type="file", name="csv")
+      button(type="submit") Create Users
