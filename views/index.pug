@@ -7,3 +7,19 @@ html
     form(action="/create-users", method="POST", enctype="multipart/form-data")
       input(type="file", name="csv")
       button(type="submit") Create Users
+    
+    h1 Upload Team Members
+    form(action='/upload-team-members', method='post', enctype='multipart/form-data')
+      input(type='file', name='file')
+      input(type='submit', value='Upload')
+
+    h1 Remove user 
+    form(method="post", action="/remove-user")
+      input(type="text", name="email", placeholder='Enter email')
+      button(type="submit") Remove user by email
+
+    h1 Remove users
+    form(method="post", action="/remove-users", enctype="application/json")
+      label(for="emails") Email addresses to keep (comma-separated):
+      input(type="text", name="emails", id="emails")
+      button(type="submit") Remove users
